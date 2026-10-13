@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · Paperkeep 文档脱敏助手</title>
+<meta name="description" content="Paperkeep 文档脱敏助手隐私政策：完全本地运行，不上传你的文件，不收集任何数据。">
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --fg:#1f2328; --muted:#6b7280;
+    --line:#e5e7eb; --accent:#0a5ad6; --code:#f3f4f6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#16181d; --card:#1e2127; --fg:#e8eaed; --muted:#9aa0a6;
+           --line:#2c3038; --accent:#7aa7ff; --code:#262a31; }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:760px; margin:0 auto; padding:40px 20px 72px; }
+  .top{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px; }
+  .brand{ font-weight:600; letter-spacing:.02em; }
+  .lang a{ color:var(--muted); text-decoration:none; font-size:14px; }
+  .lang a:hover{ color:var(--accent); }
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:36px 34px 30px;
+  }
+  h1{ font-size:26px; line-height:1.35; margin:0 0 6px; letter-spacing:.01em; }
+  .meta{ color:var(--muted); font-size:13.5px; margin:0 0 26px; }
+  h2{ font-size:17px; margin:30px 0 10px; padding-top:20px; border-top:1px solid var(--line); }
+  h2:first-of-type{ border-top:0; padding-top:0; }
+  h3{ font-size:15px; margin:20px 0 8px; color:var(--fg); }
+  p{ margin:0 0 12px; }
+  ul{ margin:0 0 12px; padding-left:22px; }
+  li{ margin:4px 0; }
+  strong{ font-weight:600; }
+  code{
+    background:var(--code); border-radius:5px; padding:1.5px 6px;
+    font:13.5px/1.5 ui-monospace,Consolas,monospace; word-break:break-all;
+  }
+  .lead{
+    background:linear-gradient(0deg,transparent,transparent);
+    border-left:3px solid var(--accent); padding:2px 0 2px 14px; margin:0 0 20px;
+    font-size:17px;
+  }
+  a{ color:var(--accent); }
+  footer{ color:var(--muted); font-size:13px; text-align:center; margin-top:26px; }
+  @media print{
+    body{ background:#fff; } .card{ border:0; padding:0; } .top,.lang{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <div class="brand">Paperkeep</div>
+    <div class="lang"><a href="privacy-en.html">English</a></div>
+  </div>
+
+  <div class="card">
+    <h1>Paperkeep 文档脱敏助手 · 隐私政策</h1>
+    <p class="meta">最后更新：2026-10-12</p>
+
+    <p class="lead">我们对隐私的态度可以概括为一句话：<strong>你的文件不离开你的电脑。</strong></p>
+
+    <p>Paperkeep 文档脱敏助手（下称“本应用”）是一款完全在本地运行的 Windows 桌面应用。本政策说明本应用会接触哪些数据、这些数据存在哪里，以及我们不会做什么。</p>
+
+    <h2>1. 我们不收集任何数据</h2>
+    <p>本应用没有账号系统，不嵌入统计或广告 SDK，<strong>不会上传你的文件，也不收集任何使用数据</strong>。你添加的文档、检测结果、导出文件全部只保存在你自己的磁盘上，我们无法访问。</p>
+
+    <h2>2. 保存在本机的数据</h2>
+    <ul>
+      <li>应用设置（窗口位置、遮挡条样式、自定义关键词等）保存在本机用户配置中；</li>
+      <li>运行日志保存在本机 <code>%LOCALAPPDATA%\Paperkeep\paperkeep.log</code>，仅用于排查问题；</li>
+      <li>授权状态（是否已购买）保存在本机 <code>%LOCALAPPDATA%\Paperkeep\license.dat</code>，使用 Windows 系统自带加密（DPAPI）并与本机绑定，<strong>不包含任何个人身份信息</strong>；</li>
+      <li>以上数据均不会上传或共享给任何第三方。</li>
+    </ul>
+
+    <h3>关于授权状态</h3>
+    <p>应用在启动时（以及距上次确认超过 45 天时）会向 Windows 查询本应用在 Microsoft Store 的授权状态，用来判断是否已购买。这个查询由系统组件完成，<strong>不涉及你处理的任何文件，也不会向我们回传任何使用数据</strong>；两次确认之间的时间完全离线。你的文件全程只在本机读写。</p>
+
+    <h2>3. 第三方组件</h2>
+    <p>本应用使用的 OCR（文字识别）等组件全部在本机离线运行，不会把页面图像或识别出的文本发送到任何服务器。</p>
+
+    <h2>4. 儿童隐私</h2>
+    <p>本应用不收集任何人的任何信息，自然也不收集儿童信息。</p>
+
+    <h2>5. 联系方式</h2>
+    <p>如对本政策有任何疑问，请联系：<a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></p>
+
+    <h2>6. 政策变更</h2>
+    <p>如有变更，我们会在本页面更新日期并说明变化内容。</p>
+  </div>
+
+  <footer>© 2026 Paperkeep · 本页面不加载任何外部资源，不设置 Cookie，不进行访问统计。</footer>
+</div>
+</body>
+</html>
