@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Paperkeep Document Redactor</title>
+<meta name="description" content="Privacy policy for Paperkeep Document Redactor: runs entirely locally, never uploads your files, collects no data.">
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --fg:#1f2328; --muted:#6b7280;
+    --line:#e5e7eb; --accent:#0a5ad6; --code:#f3f4f6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#16181d; --card:#1e2127; --fg:#e8eaed; --muted:#9aa0a6;
+           --line:#2c3038; --accent:#7aa7ff; --code:#262a31; }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.72 -apple-system,"Segoe UI",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:760px; margin:0 auto; padding:40px 20px 72px; }
+  .top{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px; }
+  .brand{ font-weight:600; letter-spacing:.02em; }
+  .lang a{ color:var(--muted); text-decoration:none; font-size:14px; }
+  .lang a:hover{ color:var(--accent); }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:36px 34px 30px; }
+  h1{ font-size:26px; line-height:1.35; margin:0 0 6px; }
+  .meta{ color:var(--muted); font-size:13.5px; margin:0 0 26px; }
+  h2{ font-size:17px; margin:30px 0 10px; padding-top:20px; border-top:1px solid var(--line); }
+  h2:first-of-type{ border-top:0; padding-top:0; }
+  h3{ font-size:15px; margin:20px 0 8px; }
+  p{ margin:0 0 12px; }
+  ul{ margin:0 0 12px; padding-left:22px; }
+  li{ margin:4px 0; }
+  code{ background:var(--code); border-radius:5px; padding:1.5px 6px;
+        font:13.5px/1.5 ui-monospace,Consolas,monospace; word-break:break-all; }
+  .lead{ border-left:3px solid var(--accent); padding:2px 0 2px 14px; margin:0 0 20px; font-size:17px; }
+  a{ color:var(--accent); }
+  footer{ color:var(--muted); font-size:13px; text-align:center; margin-top:26px; }
+  @media print{ body{ background:#fff; } .card{ border:0; padding:0; } .top,.lang{ display:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <div class="brand">Paperkeep</div>
+    <div class="lang"><a href="privacy.html">中文</a></div>
+  </div>
+
+  <div class="card">
+    <h1>Paperkeep Document Redactor · Privacy Policy</h1>
+    <p class="meta">Last updated: 2026-10-12</p>
+
+    <p class="lead">Our privacy stance fits in one sentence: <strong>your files never leave your computer.</strong></p>
+
+    <p>Paperkeep Document Redactor (“the app”) is a Windows desktop application that runs entirely on your machine. This policy explains what data the app touches, where that data lives, and what we never do.</p>
+
+    <h2>1. We collect no data</h2>
+    <p>The app has no accounts, embeds no analytics or advertising SDKs, and <strong>never uploads your files or collects usage data</strong>. Documents you add, detection results, and exported files are stored only on your own disk, and we have no way to access them.</p>
+
+    <h2>2. Data stored on your machine</h2>
+    <ul>
+      <li>App settings (window position, redaction style, custom keywords) are kept in your local user profile;</li>
+      <li>A run log is kept at <code>%LOCALAPPDATA%\Paperkeep\paperkeep.log</code> for troubleshooting only;</li>
+      <li>License status (whether the app has been purchased) is kept at <code>%LOCALAPPDATA%\Paperkeep\license.dat</code>, encrypted with Windows DPAPI and bound to this machine. <strong>It contains no personally identifying information.</strong></li>
+      <li>None of this is uploaded or shared with anyone.</li>
+    </ul>
+
+    <h3>About license status</h3>
+    <p>When the app starts (and when more than 45 days have passed since the last check), it asks Windows for this app's Microsoft Store license status in order to tell whether it has been purchased. That check is performed by system components and <strong>never involves the documents you process, and sends no usage data back to us</strong>. The rest of the time it is fully offline, and your files are read and written only on your own machine.</p>
+
+    <h2>3. Third-party components</h2>
+    <p>Components such as the OCR engine run offline on your machine. No page images or recognized text are ever sent to any server.</p>
+
+    <h2>4. Children's privacy</h2>
+    <p>The app collects no information from anyone, including children.</p>
+
+    <h2>5. Contact</h2>
+    <p>If you have any questions about this policy, contact: <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></p>
+
+    <h2>6. Changes to this policy</h2>
+    <p>When the policy changes, we will update the date on this page and describe the change.</p>
+  </div>
+
+  <footer>© 2026 Paperkeep · This page loads no external resources, sets no cookies, and performs no analytics.</footer>
+</div>
+</body>
+</html>
